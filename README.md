@@ -34,6 +34,6 @@ Contains the codebase of the Official Website of Mozilla Campus Club of SLIIT
 
 ## Additional tools
 
-- This project is bootstrapped with [Lefthook](https://evilmartians.com/opensource/lefthook), [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/). Please make good use of them.
+- This project is bootstrapped with [Lefthook](https://evilmartians.com/opensource/lefthook), [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/). It also uses [shadcn/ui](https://ui.shadcn.com/). Please make good use of them.
 
 <br/>
