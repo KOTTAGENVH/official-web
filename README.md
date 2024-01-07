@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br/>
 
-## Getting Started
+<br/>
 
-First, run the development server:
+<p align="center">
+  <img src="./public/mozilla-logo.svg" width="420" alt="Mozilla Campus Club of SLIIT Logo"/>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <a aria-label="License" href="https://github.com/sliit-foss/bashaway/blob/main/LICENSE">
+    <img alt="" src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  </a>
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br/>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contains the codebase of the Official Website of Mozilla Campus Club of SLIIT
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+## [Figma](https://www.figma.com/file/7ZbV0wWxObf7DdbtJ6PjHZ/MozillaWeb?type=design&node-id=10%3A14&mode=design&t=6LpqwKjs3Chazzwt-1)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Getting started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Run `npm install` to install all dependencies
+- Run `npm run dev` to run the website locally
 
-## Deploy on Vercel
+## Commit messages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- We follow conventional commits during our development workflow as a good practice. More information can be found at their official [documentation](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#examples)
+- Refer the [commitlint.config.js](https://github.com/Mozilla-Campus-Club-of-SLIIT/official-web/blob/main/commitlint.config.js) file for a full list of supported commit message prefixes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Additional tools
+
+- This project is bootstrapped with [Lefthook](https://evilmartians.com/opensource/lefthook), [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/). Please make good use of them.
+
+<br/>
