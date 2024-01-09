@@ -18,6 +18,16 @@ const config = {
         '2xl': '1400px',
       },
     },
+    colors: {
+      'bright-purple': '#381DDB',
+      pink: '#FF49DB',
+      orange: '#FF4E00',
+      'bright-red': '#FC5252',
+      gray: '#A7A7A7',
+      'light-pink': '#FFA3A3',
+      dark: '#000000',
+    },
+
     extend: {
       keyframes: {
         'accordion-down': {
