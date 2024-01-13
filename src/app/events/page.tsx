@@ -14,6 +14,7 @@ interface Event {
 }
 
 function Page() {
+  //filtering
   const upcomingEvents: Event[] = eventData?.eventData?.filter(
     (event: Event) => event.category === 'upcomingevent'
   );
@@ -27,7 +28,9 @@ function Page() {
   );
   return (
     <div>
-      <style>{`
+      {/*This style is added for the body element remove it once added to global css*/}
+      <style>
+        {` 
         body {
           margin: 0;
           padding: 0;
@@ -35,32 +38,14 @@ function Page() {
           height: 100%;
           width: 100%;
         }
-      `}</style>
-      <h1
-        style={{
-          color: '#FC5252',
-          fontSize: '76px',
-          fontWeight: 700,
-          justifyContent: 'center',
-          textAlign: 'center',
-          marginTop: '2rem',
-          marginBottom: '1rem',
-          fontFamily: 'Montserrat',
-        }}
-      >
+      `}
+      </style>
+      <h1 className='font-montserrat mb-4 mt-8 justify-center text-center text-7xl font-bold text-orange'>
         Upcoming Events
       </h1>
 
       {upcomingEvents !== undefined ? (
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
+        <div className='flex flex-row flex-wrap items-center justify-center'>
           {upcomingEvents?.map((event: Event) => (
             <EventCard
               key={event.id}
@@ -74,41 +59,15 @@ function Page() {
           ))}
         </div>
       ) : (
-        <h4
-          style={{
-            fontSize: '24px',
-            justifyContent: 'center',
-            textAlign: 'center',
-            fontFamily: 'Raleway',
-          }}
-        >
+        <h4 className='font-raleway justify-center text-center text-2xl'>
           No Events At This Moment. Follow Us To Get Updates.
         </h4>
       )}
-      <h2
-        style={{
-          color: '#222222',
-          fontSize: '50px',
-          fontWeight: 700,
-          justifyContent: 'center',
-          textAlign: 'center',
-          marginTop: '2rem',
-          marginBottom: '1rem',
-          fontFamily: 'Montserrat',
-        }}
-      >
+      <h2 className='text-black font-montserrat mb-4 mt-8 justify-center text-center text-5xl font-bold'>
         Past Events
       </h2>
       {pastEvents !== undefined ? (
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
+        <div className='flex flex-row flex-wrap items-center justify-center'>
           {pastEvents?.map((event: Event) => (
             <EventCard
               key={event.id}
@@ -122,41 +81,15 @@ function Page() {
           ))}
         </div>
       ) : (
-        <h4
-          style={{
-            fontSize: '24px',
-            justifyContent: 'center',
-            textAlign: 'center',
-            fontFamily: 'Raleway',
-          }}
-        >
+        <h4 className='font-raleway justify-center text-center text-2xl'>
           No Events At This Moment. Follow Us To Get Updates.
         </h4>
       )}
-      <h2
-        style={{
-          color: '#222222',
-          fontSize: '50px',
-          fontWeight: 700,
-          justifyContent: 'center',
-          textAlign: 'center',
-          marginTop: '2rem',
-          marginBottom: '1rem',
-          fontFamily: 'Montserrat',
-        }}
-      >
+      <h2 className='text-black font-montserrat mb-4 mt-8 justify-center text-center text-5xl font-bold'>
         Webinars
       </h2>
       {webinar !== undefined ? (
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
+        <div className='flex flex-row flex-wrap items-center justify-center'>
           {webinar?.map((event: Event) => (
             <EventCard
               key={event.id}
@@ -170,14 +103,7 @@ function Page() {
           ))}
         </div>
       ) : (
-        <h4
-          style={{
-            fontSize: '24px',
-            justifyContent: 'center',
-            textAlign: 'center',
-            fontFamily: 'Raleway',
-          }}
-        >
+        <h4 className='font-raleway justify-center text-center text-2xl'>
           No Events At This Moment. Follow Us To Get Updates.
         </h4>
       )}

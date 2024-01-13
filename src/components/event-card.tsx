@@ -21,109 +21,25 @@ const EventCard: React.FC<Props> = ({
   location,
 }) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '350px',
-        height: '500px',
-        margin: '1rem',
-        // border: '1px solid #E5E5E5',
-        borderRadius: '10px',
-        backgroundColor: '#FFFFFF',
-      }}
-    >
+    <div className='h-500 rounded-10 m-4 flex w-80 flex-col bg-white'>
       <Image src={'/' + image} alt={title} width={350} height={200} />
-      <h3
-        style={{
-          fontFamily: 'Montserrat',
-          fontSize: '24px',
-          justifyContent: 'center',
-          textAlign: 'center',
-          marginTop: '1rem',
-        }}
-      >
+      <h3 className='font-montserrat mt-4 justify-center text-center text-2xl'>
         {title}
       </h3>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          marginTop: '1rem',
-        }}
-      >
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginRight: '1rem',
-            marginLeft: '2rem',
-            justifyContent: 'center',
-          }}
-        >
+      <div className='mt-4 flex flex-row items-center'>
+        <div className='ml-8 mr-4 flex flex-row items-center justify-center'>
           <img src={'calendar-icon.png'} />
-          <p
-            style={{
-              fontFamily: 'raleway',
-              fontSize: '16px',
-              marginLeft: '0.5rem',
-            }}
-          >
-            {date}
-          </p>
+          <p className='font-raleway ml-2 text-base'>{date}</p>
         </div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginRight: '1rem',
-            marginLeft: '2rem',
-            justifyContent: 'center',
-          }}
-        >
+        <div className='ml-8 mr-4 flex flex-row items-center justify-center'>
           <img src={'location-icon.png'} />
-          <p
-            style={{
-              fontFamily: 'raleway',
-              fontSize: '16px',
-              marginLeft: '0.5rem',
-            }}
-          >
-            {location}
-          </p>
+          <p className='font-raleway ml-2 text-base'>{location}</p>
         </div>
       </div>
-      <p
-        style={{
-          fontFamily: 'raleway',
-          fontSize: '16px',
-          marginLeft: '2rem',
-          marginRight: '1rem',
-          marginTop: '1rem',
-          justifyContent: 'center',
-        }}
-      >
+      <p className='font-raleway ml-8 mr-4 mt-4 justify-center text-base'>
         {description}
       </p>
-      <Button
-        style={{
-          backgroundColor: '#FC5252',
-          color: '#FFFFFF',
-          width: '220px',
-          height: '50px',
-          borderRadius: '10px',
-          fontFamily: 'Raleway',
-          fontSize: '16px',
-          fontWeight: 700,
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: '1rem',
-          marginBottom: '1rem',
-        }}
-      >
+      <Button className='font-raleway mx-auto mb-4 mt-4 h-12 w-52 rounded-lg bg-orange text-base font-bold text-white'>
         View More
       </Button>
     </div>
