@@ -21,9 +21,11 @@ const EventCard: React.FC<Props> = ({
   location,
 }) => {
   return (
-    <div className='h-500 rounded-10 m-4 flex w-80 flex-col bg-white'>
+    <div className='h-500 m-4 flex w-80 flex-col rounded-bl-lg rounded-br-lg rounded-tl-lg rounded-tr-lg  bg-white'>
       <Image src={'/' + image} alt={title} width={350} height={200} />
-      <h3 className='font-montserrat mt-4 justify-center text-center text-2xl'>
+      <h3 className='font-montserrat mt-4 justify-center px-0.5 text-center text-xl'>
+        {' '}
+        {/*Reduced header size from text text-2xl -> text-xl */}
         {title}
       </h3>
       <div className='mt-4 flex flex-row items-center'>
